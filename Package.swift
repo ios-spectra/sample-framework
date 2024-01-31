@@ -16,7 +16,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(name: "SampleFramework",
                       url: "https://github.com/ios-spectra/sample-framework/releases/download/1.0/SampleFrameWork.xcframework.zip",
-                      checksum: "01554e0506485b4bf3dc16fdc5efc5f91c6f0e41f20a84243881bd93a1bed1c0"),
+                      checksum: "c53e9754faf526e25244544ec3e57bf666afac5e6df929b894cb535648abd71d"),
         .target(
             name: "SampleFrameworkPackage"),
         .testTarget(
