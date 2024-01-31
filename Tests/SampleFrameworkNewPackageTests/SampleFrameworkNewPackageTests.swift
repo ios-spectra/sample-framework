@@ -1,7 +1,7 @@
 import XCTest
-@testable import SampleFrameworkPackage
+@testable import SampleFrameworkNewPackage
 
-final class SampleFrameworkPackageTests: XCTestCase {
+final class SampleFrameworkNewPackageTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
