@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "SampleFrameworkPackage",
+    name: "NewFW",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SampleFrameworkPackage",
-            targets: ["SampleFrameworkPackage"]),
+            name: "NewFW",
+            targets: ["NewFW"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "SampleFrameworkPackage",
-                      url: "https://github.com/ios-spectra/sample-framework/releases/download/1.0/SampleFrameWork.xcframework.zip",
-                      checksum: "c53e9754faf526e25244544ec3e57bf666afac5e6df929b894cb535648abd71d"),
+        .binaryTarget(name: "NewSampleFW",
+                      url: "https://github.com/ios-spectra/sample-framework/releases/download/1.0/NewSampleFW.xcframework.zip",
+                      checksum: "1792ac386452ec82291adadee1c4509b9743bbb1160a562cf9377813edf42f67"),
         .target(
-            name: "SampleFrameworkNewPackage"),
+            name: "NewFW"),
         .testTarget(
-            name: "SampleFrameworkNewPackageTests",
-            dependencies: ["SampleFrameworkNewPackage"]),
+            name: "NewFWTests",
+            dependencies: ["NewFW"]),
     ]
 )
